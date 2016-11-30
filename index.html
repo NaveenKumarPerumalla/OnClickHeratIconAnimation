@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PullDown Refresh and PullUp Loading</title>
+<script type="text/javascript">
+
+</script>
+<style>
+/**********Heart icon New Animation CSS by Naveen************/
+
+					.heartSection{
+						position: relative;
+					}
+					.heart{
+						font-size: 17px;
+						color: #ffffff;
+					}
+					.happy .heart{
+						font-size: 17px;
+						color: #ED7A7A !important;
+						-webkit-animation: changeColor 1s; /* Safari 4+ */
+						-moz-animation:    changeColor 1s; /* Fx 5+ */
+						-o-animation:      changeColor 1s; /* Opera 12+ */
+						animation:         changeColor 1s; /* IE 10+, Fx 29+ */
+						-webkit-animation-fill-mode: forwards;
+						-moz-animation-fill-mode: forwards;
+						-o-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+						padding:0px 2px;
+					}
+					.heartBorder {  
+						font-size: 17px;
+						position: absolute;
+						left: 0px;
+    					top: -1px;
+						color: #9b9b9b;
+						padding:0px 2px;
+					}
+					.happy .heartBorder{
+						color:#ED7A7A !important
+					}
+					.heart i{
+						margin-top: 3px;
+						/*margin-left: 2px;*/
+					}
+					@-webkit-keyframes changeColor {
+					  0%    { color: #ffffff; }
+					  10%   { color: #fbe4e4; }
+					  20%   { color: #f8caca; }
+					  30%   { color: #f4afaf; }
+					  40%   { color: #f19595; }
+					  50%   { color: #ed7a7a; }
+					  60%   { color: #f19595; }
+					  70%   { color: #f4afaf; }
+					  80%   { color: #f8caca; }
+					  90%   { color: #fbe4e4; }
+					  100%  { color: #ffffff; }
+					}
+					@-moz-keyframes changeColor {
+					  0%    { color: #ffffff; }
+					  10%   { color: #fbe4e4; }
+					  20%   { color: #f8caca; }
+					  30%   { color: #f4afaf; }
+					  40%   { color: #f19595; }
+					  50%   { color: #ed7a7a; }
+					  60%   { color: #f19595; }
+					  70%   { color: #f4afaf; }
+					  80%   { color: #f8caca; }
+					  90%   { color: #fbe4e4; }
+					  100%  { color: #ffffff; }
+					}
+					@-o-keyframes changeColor {
+					  0%    { color: #ffffff; }
+					  10%   { color: #fbe4e4; }
+					  20%   { color: #f8caca; }
+					  30%   { color: #f4afaf; }
+					  40%   { color: #f19595; }
+					  50%   { color: #ed7a7a; }
+					  60%   { color: #f19595; }
+					  70%   { color: #f4afaf; }
+					  80%   { color: #f8caca; }
+					  90%   { color: #fbe4e4; }
+					  100%  { color: #ffffff; }
+					}
+					@keyframes changeColor {
+					  0%    { color: #ffffff; }
+					  10%   { color: #fbe4e4; }
+					  20%   { color: #f8caca; }
+					  30%   { color: #f4afaf; }
+					  40%   { color: #f19595; }
+					  50%   { color: #ed7a7a; }
+					  60%   { color: #f19595; }
+					  70%   { color: #f4afaf; }
+					  80%   { color: #f8caca; }
+					  90%   { color: #fbe4e4; }
+					  100%  { color: #ffffff; }
+					}
+/*****************Star Animation New CSS by Naveen*********************/
+					.starSection{
+						position: relative;
+					}
+					.ani-star{
+						font-size: 17px;
+						color: #ffffff;
+					}
+					.stared .diamond {
+						font-size: 17px;
+						color: #f5c523 !important;
+						-webkit-animation: changeColor2 1s;
+						-moz-animation: changeColor2 1s;
+						-o-animation: changeColor2 1s;
+						animation: changeColor2 1s;
+						-webkit-animation-fill-mode: forwards;
+						-moz-animation-fill-mode: forwards;
+						-o-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+					}
+					.starBorder {  
+						font-size: 17px;
+						position: absolute;
+						left: 0px;
+    					top: 1px;
+						color: #9b9b9b !important;
+					}
+					.stared .starBorder{
+						color:#f5c523 !important
+					}
+					.diamond i{
+						margin-top: 3px;
+						margin-left: 2px;
+					}
+					@-webkit-keyframes changeColor2 {
+					  0%    { color: #ffffff; }
+					  10%   { color: #fdf3d3; }
+					  20%   { color: #fbe8a7; }
+					  30%   { color: #f9dc7b; }
+					  40%   { color: #f7d14f; }
+					  50%   { color: #f5c523; }
+					  60%   { color: #f7d14f; }
+					  70%   { color: #f9dc7b; }
+					  80%   { color: #fbe8a7; }
+					  90%   { color: #fdf3d3; }
+					  100%  { color: #ffffff; }
+					}
+					@-moz-keyframes changeColor2 {
+					  0%    { color: #ffffff; }
+					  10%   { color: #fdf3d3; }
+					  20%   { color: #fbe8a7; }
+					  30%   { color: #f9dc7b; }
+					  40%   { color: #f7d14f; }
+					  50%   { color: #f5c523; }
+					  60%   { color: #f7d14f; }
+					  70%   { color: #f9dc7b; }
+					  80%   { color: #fbe8a7; }
+					  90%   { color: #fdf3d3; }
+					  100%  { color: #ffffff; }
+					}
+					@-o-keyframes changeColor2 {
+					  0%    { color: #ffffff; }
+					  10%   { color: #fdf3d3; }
+					  20%   { color: #fbe8a7; }
+					  30%   { color: #f9dc7b; }
+					  40%   { color: #f7d14f; }
+					  50%   { color: #f5c523; }
+					  60%   { color: #f7d14f; }
+					  70%   { color: #f9dc7b; }
+					  80%   { color: #fbe8a7; }
+					  90%   { color: #fdf3d3; }
+					  100%  { color: #ffffff; }
+					}
+					@keyframes changeColor2 {
+					  0%    { color: #ffffff; }
+					  10%   { color: #fdf3d3; }
+					  20%   { color: #fbe8a7; }
+					  30%   { color: #f9dc7b; }
+					  40%   { color: #f7d14f; }
+					  50%   { color: #f5c523; }
+					  60%   { color: #f7d14f; }
+					  70%   { color: #f9dc7b; }
+					  80%   { color: #fbe8a7; }
+					  90%   { color: #fdf3d3; }
+					  100%  { color: #ffffff; }
+					}
+</style>
+</head>
+
+<body>
+
+<div class="n_postone">
+    <div class="ul-block-a"><div class="nn1"><p fav_count>1</p></div><div class="nn2"><span class="ani-star starSection <eq name='info.has_fav' value='1'>  stared star</eq>" data-role="none"><i class="fa fa-star staricon_without_animate" aria-hidden="true"></i><i class="fa fa-star-o starBorder" aria-hidden="true"></i></span></div></div>   
+    <div class="ul-block-b"><div class="nn1"><p great_count>1</p></div><div class="nn2"><span mid='{$info.mid}' class="heart heartSection <eq name='info.great' value='1'>  happy liked</eq>" data-role="none"><i  class="fa fa-heart heart_without_animate " aria-hidden="true"></i><i class="fa fa-heart-o heartBorder" aria-hidden="true"></i></span></div></div>
+    <div class="ul-block-c"><a href="#comments" onClick="replyMsg('{$info.mid}','{$info.uid}','{$info.nickname}','');" ><div class="nn1"><p reply_count>1</p></div><div class="nn2"><img src="/Public/images/ot/COMMENT.png" class="comment_made" /></div></a></div>
+</div>
+
+</body>
+</html>
